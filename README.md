@@ -1,3 +1,3 @@
 # FACOM32305-POO1
 
-Diretório contendo as atividades mensais da disciplina.
+Diretório contendo as atividades semanais da disciplina.
