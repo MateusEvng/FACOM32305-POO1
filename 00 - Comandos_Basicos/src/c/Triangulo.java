@@ -31,5 +31,15 @@ public class Triangulo {
         //return getLado1() + getLado2() + getLado3();
     }
 
+    int defineTipo(){
+        if (this.Lado1 == this.Lado2 && this.Lado2 == this.Lado3) {
+            return 1; //equilatero
+        }
+        else if (this.Lado1 == this.Lado2 || this.Lado2 == this.Lado3 || this.Lado3 == this.Lado1) {
+            return 2; //isosceles
+        }
+        else return 3;
+    }
+
 
 }

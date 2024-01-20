@@ -1,8 +1,10 @@
 ## 00 - Comandos Básicos
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+A atividade 00 engloba Comandos básicos do Java e a Criação de classes e objetos.
 
 ## Folder Structure
+
+Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
 
 The workspace contains two folders by default, where:
 
