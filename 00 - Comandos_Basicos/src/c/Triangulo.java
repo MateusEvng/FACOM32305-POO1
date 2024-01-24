@@ -27,15 +27,14 @@ public class Triangulo {
 
     //perimetro
     double calculaPerimetro(){
-        return this.Lado1 + this.Lado2 + this.Lado3;
-        //return getLado1() + getLado2() + getLado3();
+        return getLado1() + getLado2() + getLado3();
     }
 
     int defineTipo(){
-        if (this.Lado1 == this.Lado2 && this.Lado2 == this.Lado3) {
+        if (getLado1() == getLado2() && getLado2() == getLado3()) {
             return 1; //equilatero
         }
-        else if (this.Lado1 == this.Lado2 || this.Lado2 == this.Lado3 || this.Lado3 == this.Lado1) {
+        else if (getLado1() == getLado2() || getLado2() == getLado3() || getLado3() == getLado1()) {
             return 2; //isosceles
         }
         else return 3;
