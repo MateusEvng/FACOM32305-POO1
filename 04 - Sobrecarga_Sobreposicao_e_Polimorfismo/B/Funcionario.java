@@ -1,3 +1,14 @@
+/*
+ * ------------------------------------------------------------
+ * Cabeçalho:
+ * Nome: Mateus Evangelista
+ * Matrícula: 12011BSI277
+ * Data: 27/02/2024
+ * Descrição: Esta classe representa um funcionário básico com informações como matrícula, nome, CPF, idade e salário.
+ * ------------------------------------------------------------
+ */
+
+
 package B;
 
 public class Funcionario {

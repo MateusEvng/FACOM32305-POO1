@@ -1,3 +1,14 @@
+/*
+ * ------------------------------------------------------------
+ * Cabeçalho:
+ * Nome: Mateus Evangelista
+ * Matrícula: 12011BSI277
+ * Data: 27/02/2024
+ * Descrição: Esta classe representa um funcionário noturno, herdando de Funcionario, com informações sobre o valor da hora e noites trabalhadas.
+ * ------------------------------------------------------------
+ */
+
+
 package B.B_filhas;
 
 import B.Funcionario;
@@ -11,8 +22,13 @@ public class FuncionarioNoturno extends Funcionario {
         return valorHora;
     }
     public void setValorHora(double valorHora) {
-        this.valorHora = valorHora;
+        if (valorHora >= 0) {
+            this.valorHora = valorHora;
+        } else {
+            System.out.println("O valor da hora não pode ser negativo.");
+        }
     }
+    
 
     public int getNoiteTrabalhada() {
         return noiteTrabalhada;
@@ -21,14 +37,13 @@ public class FuncionarioNoturno extends Funcionario {
         this.noiteTrabalhada = noiteTrabalhada;
     }
 
-    public FuncionarioNoturno(int matricula, String nome, String cpf, int idade, double valorHora){
+    public FuncionarioNoturno(int matricula, String nome, String cpf, int idade, double valorHora) {
         super(matricula, nome, cpf, idade);
-
         setSalarioBase(2500.00);
         setValorHora(valorHora);
-        setNoiteTrabalhada(0);
-
+        setNoiteTrabalhada(0); // Define o número de noites trabalhadas inicialmente como zero
     }
+    
 
     public void adicionaNoite(){
         setNoiteTrabalhada(getNoiteTrabalhada() + 1);
